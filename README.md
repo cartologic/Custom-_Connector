@@ -16,7 +16,7 @@ Then, why don't you **package** them and distribute them by developing Power BI 
 ## <span style="color: #004D8D;">Prerequisites
 * [	Power BI Desktop ](https://powerbi.microsoft.com/en-us/desktop/)  <img src="/images/icons8-power-bi-48.png" alt="drawing" width="30" height="30" align="center" />
 
-* [	Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/)  <img src="images/icons8-visual-studio-code-2019-48.png" alt="drawing" width="30" height="30" align="center" />
+* [	Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/)  <img src="images/icons8-visual-studio-code-2019-48.png" alt="drawing" width="30" height="30" align="center" />
 
 * [	Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)  <img src="images/icons8-sdk-package-installation-kit-isolated-on-white-background-28.png" alt="drawing" width="30" height="30" align="center" />
 
