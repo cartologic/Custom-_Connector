@@ -14,11 +14,11 @@ Then, why don't you **package** them and distribute them by developing Power BI 
 
 
 ## <span style="color: #004D8D;">Prerequisites
-* [	Power BI Desktop ](https://powerbi.microsoft.com/en-us/desktop/)  <img src="../PowerBi_Connector_Documentation/images/icons8-power-bi-48.png" alt="drawing" width="30" height="30" align="center" />
+* [	Power BI Desktop ](https://powerbi.microsoft.com/en-us/desktop/)  <img src="/images/icons8-power-bi-48.png" alt="drawing" width="30" height="30" align="center" />
 
-* [	Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/)  <img src="../PowerBi_Connector_Documentation/images/icons8-visual-studio-code-2019-48.png" alt="drawing" width="30" height="30" align="center" />
+* [	Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/)  <img src="images/icons8-visual-studio-code-2019-48.png" alt="drawing" width="30" height="30" align="center" />
 
-* [	Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)  <img src="../PowerBi_Connector_Documentation/images/icons8-sdk-package-installation-kit-isolated-on-white-background-28.png" alt="drawing" width="30" height="30" align="center" />
+* [	Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)  <img src="images/icons8-sdk-package-installation-kit-isolated-on-white-background-28.png" alt="drawing" width="30" height="30" align="center" />
 
 
 Simply install them one by one by following wizards. 
@@ -42,57 +42,57 @@ https://data.tabaqat.net/geoserver/education-and-training/ows?service=WFS&versio
 
 1-First navigate to [***tabaqat.net***](https://tabaqat.net/) and create an account if you don't have one.
 
-![Register at tabaqat.net](../PowerBi_Connector_Documentation/images/register_tabaqat.png)
+![Register at tabaqat.net](images/register_tabaqat.png)
 
 2-After registering click login and sign with your email and password.
 
-![Sign in at tabaqat.net](../PowerBi_Connector_Documentation/images/register_tabaqat_2.png)
+![Sign in at tabaqat.net](images/register_tabaqat_2.png)
 
 3-Change language to English.
 
-![Change Language](../PowerBi_Connector_Documentation/images/change_language.png)
+![Change Language](images/change_language.png)
 
 4-Click on **Key** then **Generate Key**. As a free user you have up to five keys to generate.
 
-![toke_copy](../PowerBi_Connector_Documentation/images/toke_copy.png)
+![toke_copy](images/toke_copy.png)
 
 5-Head to **Map Services** and select the layer you want to load inside **PowerBi** and then click "Use" .
 
-![](../PowerBi_Connector_Documentation/images/get_link.png)
+![](images/get_link.png)
 
 6-Click on **MICROSOFT POWER BI** Then copy Url that contain your Generated access token .
 
-![](../PowerBi_Connector_Documentation/images/access_token.png)
+![](images/access_token.png)
 
 ## <span style="color: #004D8D;">Start from Power BI desktop
 1-Open **PowerBi** Desktop and Connect to Web.
 
-![Open Power BI Desktop and Connect to Web](../PowerBi_Connector_Documentation/images/Open_Power_BI_Desktop.png)
+![Open Power BI Desktop and Connect to Web](images/Open_Power_BI_Desktop.png)
 
 
 2-Paste access token from [***tabaqat.net***](https://tabaqat.net/) that mentioned later here.
 
-![Migrate URL and access token](../PowerBi_Connector_Documentation/images/Migrate_URL_and_access_token.png)
+![Migrate URL and access token](images/Migrate_URL_and_access_token.PNG)
 
 3-**PowerBi** will forward you automatically to **Power Query editor**.
 
-![Power Query editor](../PowerBi_Connector_Documentation/images/Power_Query_editor.png)
+![Power Query editor](images/Power_Query_editor.PNG)
 
 
 4-Press on **Advanced Editor**.
 
-![Press on Advanced Editor](../PowerBi_Connector_Documentation/images/Press_on_Advanced_Editor.png)
+![Press on Advanced Editor](images/Press_on_Advanced_Editor.PNG)
 
-8-Copy [**M**](https://learn.microsoft.com/en-us/powerquery-m/) code from Advanced editor and put it in sticky note because you will use later.
+5-Copy [**M**](https://learn.microsoft.com/en-us/powerquery-m/) code from Advanced editor and put it in sticky note because you will use later.
 
-![M Code](../PowerBi_Connector_Documentation/images/M_Code.png)
+![M Code](images/M_Code.PNG)
 
-9-While you open **PowerBI Desktop**, make sure you change Data Extension policy in security settings.
+6-While you open **PowerBI Desktop**, make sure you change Data Extension policy in security settings.
 
-![security settings](../PowerBi_Connector_Documentation/images/security_settings.png)
+![security settings](images/security_settings.PNG)
 
 
-![security settings](../PowerBi_Connector_Documentation/images/security_settings_2.png)
+![security settings](images/security_settings_2.PNG)
 
 ## <span style="color: #004D8D;">Develop Custom Connector
 
@@ -104,11 +104,11 @@ Now We convert (develop) above **M** code into custom connector.
 
 2-Select **Data Connector Project** . If you don't see this, make sure to install **Power Query SDK** and restart Visual Studio.
 
-![security settings](../PowerBi_Connector_Documentation/images/Data_Connector_Project.png)
+![security settings](images/Data_Connector_Project.PNG)
 
 3-Name the project and press **Ok**.
 
-![Name the project](../PowerBi_Connector_Documentation/images/Name_the_project.png)
+![Name the project](images/Name_the_project.PNG)
 
 4-Visual Studio generates many files, but you just need to pay attention to two files.
 
@@ -138,12 +138,12 @@ Get_tabqat1 = () as table =>
 <br />
 <br />
 
-![Get_tabqat_1 ](../PowerBi_Connector_Documentation/images/Get_tabqat1.png)
+![Get_tabqat_1 ](images/Get_tabqat1.PNG)
 
 
 2-Next, migrate the rest of the code that we mention later by replaces existing code under shared keyword. Again, I place picture below.
 
-![Migrate](../PowerBi_Connector_Documentation/images/Migrate.png)
+![Migrate](images/Migrate.PNG)
 
 #### That's it!
 
@@ -154,11 +154,11 @@ Get_tabqat1 = () as table =>
 
 2-Press F5 key to start test. The **M Query Output** window opens and asks credential first. Set **Anonymous** to credential type and click Set Credential.
 
-![Set Credential](../PowerBi_Connector_Documentation/images/Set_Credential.png)
+![Set Credential](images/Set_Credential.PNG)
 
 3-Press **F5** again and you see the data comes back.
 
-![data](../PowerBi_Connector_Documentation/images/data.png)
+![data](images/data.PNG)
 
  Now you build your first connector.
 
@@ -169,11 +169,11 @@ Last step is to deploy the connector.
 1-Navigate to the project folder | bin | Debug. You can find ***.mez file.** There is a plan to change file extension so it could be different in the future.
 
 
-![mez](../PowerBi_Connector_Documentation/images/mez.png)
+![mez](images/Mez.PNG)
 
 2-Copy the file into **C:\users<user>\Documents\Power BI Desktop\Custom Connectors folder**. Create the folder if not exists.
 
-![mez_2](../PowerBi_Connector_Documentation/images/mez_2.png)
+![mez_2](images/mez_2.PNG)
 #### That's it!
 
 
@@ -182,27 +182,27 @@ Last step is to deploy the connector.
 
 2-Search for **"Custom_Connector"** and you should find your connector.
 
-![Custom Connector](../PowerBi_Connector_Documentation/images/Custom_Connector.png)
+![Custom Connector](images/Custom_Connector.PNG)
 
 3-You will see **<span style="color: #FF0000;">WARNNING</span>** when connecting but just continue.
 
-![warning](../PowerBi_Connector_Documentation/images/warning.png)
+![warning](images/warning.PNG)
 
 4-Only **anonymous** authentication is available. Click Connect.
 
-![anonymous](../PowerBi_Connector_Documentation/images/anonymous.png)
+![anonymous](images/anonymous.PNG)
 
 5-Load the data or continue to transform if you want.
 
-![load](../PowerBi_Connector_Documentation/images/load.png)
+![load](images/load.PNG)
 
 6-If you want to see the data that loaded you will find it at the right in **PowerBi**.
 
-![data_2](../PowerBi_Connector_Documentation/images/data_2.png)
+![data_2](images/data_2.PNG)
 
 7-Repeat all above steps with another **URL** with the same **access token**.
 
-![URL](../PowerBi_Connector_Documentation/images/URL.png)
+![URL](images/URL.PNG)
 
 8-delete **.mez** file from **Custom Connectors folder** and rebuild the script ,after rebuild the script but **.mez** In Custom Connectors folder.
 
@@ -212,35 +212,35 @@ Last step is to deploy the connector.
 
 11-Click on Transform data in **PowerBi** ,this step will forward you to power query editor.
 
-![Transform](../PowerBi_Connector_Documentation/images/Transform.png)
+![Transform](images/Transform.PNG)
 
 12-Click on Advanced Editor advanced_editor.
 
-![advanced editor](../PowerBi_Connector_Documentation/images/advanced_editor.png)
+![advanced editor](images/advanced_editor.PNG)
 
 13-Copy **M** code and press **Done**.
 
-![done](../PowerBi_Connector_Documentation/images/done.png)
+![done](images/done.PNG)
 
 14-from **New Sources** Click on **Blank Query** .
 
-![blank](../PowerBi_Connector_Documentation/images/blank.png)
+![blank](images/blank.PNG)
 
 15-Click on Advanced Editor again and paste **M** code in it but this time will change in the name of function **Custom_Connector2** that will load the data from second **URL** and press **Done**.
 
-![query](../PowerBi_Connector_Documentation/images/query.png)
+![query](images/query.PNG)
 
 16-Now you have two data sources from different URLs with the same access token.
 
-![URL_2](../PowerBi_Connector_Documentation/images/URL_2.png)
+![URL_2](images/URL_2.PNG)
 
 17-Finally press on **�Close & Apply�** to load data in **PowerBi**.
 
-![close](../PowerBi_Connector_Documentation/images/close.png)
+![close](images/close.PNG)
 
 18-to see data that loaded in **PowerBi** ,press on �Data�.
 
-![final](../PowerBi_Connector_Documentation/images/final.png)
+![final](images/final.PNG)
 
 **Now you are ready to build visuals using PowerBi**.
 
@@ -249,19 +249,19 @@ Last step is to deploy the connector.
 long prees on column that exsist in another table and match between them and finally press
 **ok**.
 
-![relationship](../PowerBi_Connector_Documentation/images/relationship.png)
+![relationship](images/relationship.PNG)
 
 20-Relationship will created automatic between 2 tables ,then prees **Ok**.
 
-![many_to_many](../PowerBi_Connector_Documentation/images/many_to_many.png)
+![many_to_many](images/many_to_many.PNG)
 <br/>
 <br/>
-![relationship_2](../PowerBi_Connector_Documentation/images/relationship_2.png)
+![relationship_2](images/relationship_2.PNG)
 
 21-Build your visuals using the data.
 
-![visual](../PowerBi_Connector_Documentation/images/visual.png)
+![visual](images/visual.PNG)
 <br/>
 <br/>
-![Create_Map](../PowerBi_Connector_Documentation/images/Create_Map.png)
+![Create_Map](images/Create_Map.PNG)
 
